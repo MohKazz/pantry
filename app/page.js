@@ -130,10 +130,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-900 via-red-900 to-black p-8">
+    <main className="flex flex-col items-center min-h-screen bg-gradient-to-br from-blue-900 via-red-900 to-black p-4 md:p-8">
       <header className="text-center text-white mb-8">
-        <h1 className="text-5xl font-bold mb-2">{t('title')}</h1>
-        <p className="text-lg">{t('description')}</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2">{t('title')}</h1>
+        <p className="text-base md:text-lg">{t('description')}</p>
       </header>
 
       {/* Language Switcher */}
@@ -156,7 +156,7 @@ export default function Home() {
 
       {/* Add New Item Section */}
       <section className="bg-white shadow-lg rounded-lg p-6 mb-8 w-full max-w-4xl">
-        <h2 className="text-3xl font-semibold mb-4 text-gray-400">{t('addNewItem')}</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-400">{t('addNewItem')}</h2>
         <form className="grid grid-cols-1 gap-4 md:grid-cols-3" onSubmit={addItem}>
           <input
             value={newItem.name}
@@ -192,7 +192,7 @@ export default function Home() {
         
         {/* Search Items */}
         <section className="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-400">{t('searchItems')}</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-400">{t('searchItems')}</h2>
           <input
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -204,7 +204,7 @@ export default function Home() {
 
         {/* All Items */}
         <section className="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-400">{t('All Items')}</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-400">{t('All Items')}</h2>
           {filteredItems.length > 0 ? (
             <ul className="space-y-4">
               {filteredItems.map((item) => (
@@ -241,7 +241,7 @@ export default function Home() {
 
         {/* Upcoming Expirations */}
         <section className="bg-white shadow-lg rounded-lg p-6 w-full max-w-4xl">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-400">{t('upcomingExpirations')}</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-400">{t('upcomingExpirations')}</h2>
           {upcomingExpirations.length > 0 ? (
             <ul className="space-y-4">
               {upcomingExpirations.map((item) => (
@@ -267,7 +267,7 @@ export default function Home() {
 
       {/* Notes Section */}
       <section className="bg-white shadow-lg rounded-lg p-6 mt-8 w-full max-w-4xl">
-        <h2 className="text-3xl font-semibold mb-4 text-gray-400">{t('Notes')}</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-400">{t('Notes')}</h2>
         <form onSubmit={addNote} className="mb-4">
           <textarea
             value={newNote}
@@ -300,7 +300,7 @@ export default function Home() {
         )}
       </section>
 
-      <footer className="text-center text-white mt-8">
+      <footer className="text-center text-white mt-8 p-4">
         <p>{t('createdBy')} <a href="https://mohkazz.github.io/LP/" target="_blank" className="text-teal-400 hover:underline">{t('website')}</a>.</p>
       </footer>
     </main>
