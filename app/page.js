@@ -301,7 +301,7 @@ export default function Home() {
       </section>
 
       <footer className="text-center text-white mt-8 p-4">
-        <p>{t('createdBy')} <a href="https://mohkazz.github.io/LP/" target="_blank" className="text-teal-400 hover:underline">{t('website')}</a>.</p>
+        <p>{t('createdBy')} <a href="https://lp-mocha.vercel.app/" target="_blank" className="text-teal-400 hover:underline">{t('website')}</a>.</p>
       </footer>
     </main>
   );
