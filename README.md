@@ -26,7 +26,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/pantry-management-app.git
+   git clone https://github.com/MohKazz/pantry-management-app.git
    ```
 
 2. Navigate to the project directory:
@@ -71,6 +71,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any questions or feedback, feel free to reach out:
 
 - **Email**: [mohakhazza@gmail.com](mailto:mohakhazza@gmail.com)
-- **GitHub**: [github.com/yourusername](https://github.com/yourusername)
+- **GitHub**: [github.com/MohKazz](https://github.com/MohKazz)
 
 Enjoy managing your pantry efficiently!
